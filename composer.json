@@ -1,0 +1,24 @@
+{
+    "name": "shfarzam/data-validation",
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "9.6.x-dev"
+    },
+    "keywords": [
+        "validation",
+        "email",
+        "url",
+        "password"
+    ],
+    "autoload": {
+        "psr-4": {
+            "shfarzam\\data-validation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shahriar Farzam",
+            "email": "sh.farzam@hotmail.com"
+        }
+    ]
+}
