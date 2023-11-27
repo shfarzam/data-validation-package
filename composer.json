@@ -1,5 +1,6 @@
 {
     "name": "shfarzam/data-validation",
+    "description": "A PHP library for data validation including email, URL, and password validation methods.",
     "license": "MIT",
     "type": "library",
     "minimum-stability": "stable",
