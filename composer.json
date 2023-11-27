@@ -1,7 +1,9 @@
 {
     "name": "shfarzam/data-validation",
+    "license": "proprietary",
     "type": "library",
-    "require": {
+    "minimum-stability": "stable",
+    "require-dev": {
         "phpunit/phpunit": "9.6.x-dev"
     },
     "keywords": [
@@ -12,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "shfarzam\\data-validation\\": "src/"
+            "shfarzam\\DataValidation\\": "src/Validation"
         }
     },
     "authors": [
@@ -20,5 +22,10 @@
             "name": "Shahriar Farzam",
             "email": "sh.farzam@hotmail.com"
         }
-    ]
+    ],
+    "scripts": {
+        "test": [
+            "phpunit tests/*.php"
+        ]
+    }
 }
