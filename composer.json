@@ -1,8 +1,22 @@
 {
     "name": "shfarzam/data-validation",
+    "description": "A PHP library for data validation including email, URL, and password validation methods.",
+    "license": "MIT",
     "type": "library",
+    "minimum-stability": "stable",
     "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
         "phpunit/phpunit": "9.6.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "third-party/required-plugin": true,
+            "my-organization/*": true,
+            "unnecessary/plugin": true,
+            "kylekatarnls/update-helper": true
+        }
     },
     "keywords": [
         "validation",
@@ -12,7 +26,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "shfarzam\\data-validation\\": "src/"
+            "shfarzam\\DataValidation\\": "src/Validation"
         }
     },
     "authors": [
@@ -20,5 +34,10 @@
             "name": "Shahriar Farzam",
             "email": "sh.farzam@hotmail.com"
         }
-    ]
+    ],
+    "scripts": {
+        "test": [
+            "phpunit tests/*.php"
+        ]
+    }
 }
