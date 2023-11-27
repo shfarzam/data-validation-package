@@ -1,7 +1,9 @@
 <?php
 
-use DataValidation\Validator;
+require './vendor/autoload.php';
+
 use PHPUnit\Framework\TestCase;
+use shfarzam\DataValidation\Validator as Validator;
 
 class ValidatorTest extends TestCase
 {
