@@ -1,10 +1,21 @@
 {
     "name": "shfarzam/data-validation",
-    "license": "proprietary",
+    "license": "MIT",
     "type": "library",
     "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4"
+    },
     "require-dev": {
         "phpunit/phpunit": "9.6.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "third-party/required-plugin": true,
+            "my-organization/*": true,
+            "unnecessary/plugin": true,
+            "kylekatarnls/update-helper": true
+        }
     },
     "keywords": [
         "validation",
