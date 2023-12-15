@@ -18,4 +18,13 @@ class ValidatorTest extends TestCase
         $this->assertTrue(Validator::validateURL('https://www.example.com'));
         $this->assertFalse(Validator::validateURL('invalid_url'));
     }
+
+    public function testPasswordValidation()
+    {
+        $this->assertTrue(Validator::validatePassword('123456798', 8));
+        $this->assertFalse(Validator::validatePassword('invalid_pass', 20));
+        $this->assertTrue(Validator::validatePassword('Aa654321@', 8, true));
+        $this->assertFalse(Validator::validatePassword('aa654321@', 8, true));
+        $this->assertFalse(Validator::validatePassword('Aa654321', 8, true));
+    }
 }
