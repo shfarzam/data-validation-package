@@ -46,7 +46,8 @@ use shfarzam\DataValidation\Validator;
 
 $password = 'securepassword';
 
-if (Validator::validatePassword($password, 8)) {
+// validatePassword(Password, MinLenght, CheckComplexity)
+if (Validator::validatePassword($password, 8, True / False)) {
     // Valid password
 } else {
     // Invalid password
